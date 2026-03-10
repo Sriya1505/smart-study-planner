@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Study Planner</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Smart Study Planner</h1>
+
+<a href="/logout">Logout</a>
+
+<h2>Add Task</h2>
+
+<form action="/add" method="post">
+
+<input type="text" name="task" placeholder="Study Topic" required>
+
+<input type="date" name="date">
+
+<button type="submit">Add</button>
+
+</form>
+
+<h2>Your Tasks</h2>
+
+<ul>
+
+{% for task in tasks %}
+
+<li>
+
+{{task["task"]}} - {{task["date"]}}
+
+<a href="/delete/{{task['id']}}">Delete</a>
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</body>
+</html>

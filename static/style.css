@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    margin:0;
+}
+
+.container{
+    width:500px;
+    margin:120px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{
+    color:#333;
+}
+
+input{
+    padding:10px;
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+    background:#2575fc;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+li{
+    list-style:none;
+    background:#eef1ff;
+    padding:10px;
+    margin:10px;
+    border-radius:6px;
+}
